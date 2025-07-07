@@ -1,95 +1,63 @@
-# Font Awesome Dynamic Icon
+# @julz-gtkncht/dynamic-icon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable React component for dynamic Font Awesome icons with Tailwind CSS support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Installation
 
-## Expanding the ESLint configuration
+Install the package and its peer dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+npm install @julz-gtkncht/dynamic-icon @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome tailwindcss
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> **Note:**
+>
+> - `react` and `react-dom` are peer dependencies. Make sure they are installed in your project.
+> - Tailwind CSS is optional but recommended for styling.
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+---
 
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## 🚀 Usage
 
-# DynamicIcon
-
-A reusable React component for rendering Font Awesome icons dynamically with Tailwind CSS support.
-
-## Installation
-
-```
-npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome tailwindcss
-```
-
-## Usage
+Import and use the `DynamicIcon` component in your React app:
 
 ```tsx
-import { DynamicIcon } from "dynamic-icon";
+import { DynamicIcon } from "@julz-gtkncht/dynamic-icon";
 
-<DynamicIcon name="faCoffee" color="text-blue-600" size={32} />;
+function App() {
+  return (
+    <div>
+      <DynamicIcon name="faCoffee" color="text-blue-600" size={32} />
+    </div>
+  );
+}
 ```
 
-- `name`: Font Awesome icon name (e.g., `faCoffee`, `faHome`)
-- `color`: Tailwind CSS classes (e.g., `text-red-500`)
-- `size`: Size in pixels (number)
+### Props
 
-## License
+- `name` (string, required): Font Awesome icon name (e.g., `faCoffee`, `faHome`)
+- `color` (string, optional): Tailwind CSS classes (e.g., `text-red-500`)
+- `size` (number, optional): Size in pixels (e.g., `32`)
+
+---
+
+## 🛠️ Requirements
+
+- React 18 or newer
+- Font Awesome packages (see above)
+- Tailwind CSS (optional, for color classes)
+
+---
+
+## 📝 License
 
 MIT
+
+---
+
+## 💡 More Info
+
+- [GitHub Repository](https://github.com/yourusername/dynamic-icon)
+- [NPM Package](https://www.npmjs.com/package/@julz-gtkncht/dynamic-icon)
