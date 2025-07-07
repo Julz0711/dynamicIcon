@@ -59,5 +59,5 @@ MIT
 
 ## 💡 More Info
 
-- [GitHub Repository](https://github.com/yourusername/dynamic-icon)
+- [GitHub Repository](https://github.com/Julz0711/dynamicIcon)
 - [NPM Package](https://www.npmjs.com/package/@julz-gtkncht/dynamic-icon)
