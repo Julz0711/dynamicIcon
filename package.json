@@ -1,6 +1,6 @@
 {
   "name": "@julz-gtkncht/dynamic-icon",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A reusable React component for dynamic Font Awesome icons with Tailwind CSS support.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,6 +49,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Julz0711/dynamic-icon"
+    "url": "https://github.com/Julz0711/dynamicIcon"
   }
 }
