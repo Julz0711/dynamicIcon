@@ -13,6 +13,7 @@ npm install @julz-gtkncht/dynamic-icon @fortawesome/fontawesome-svg-core @fortaw
 ```
 
 > **Note:**
+>
 > - `react` and `react-dom` are peer dependencies. Make sure they are installed in your project.
 > - Tailwind CSS is optional but recommended for styling.
 
@@ -23,7 +24,7 @@ npm install @julz-gtkncht/dynamic-icon @fortawesome/fontawesome-svg-core @fortaw
 Import and use the `DynamicIcon` component in your React app:
 
 ```tsx
-import { DynamicIcon } from '@julz-gtkncht/dynamic-icon';
+import { DynamicIcon } from "@julz-gtkncht/dynamic-icon";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
 ```
 
 ### Props
+
 - `name` (string, required): Font Awesome icon name (e.g., `faCoffee`, `faHome`)
 - `color` (string, optional): Tailwind CSS classes (e.g., `text-red-500`)
 - `size` (number, optional): Size in pixels (e.g., `32`)
@@ -42,6 +44,7 @@ function App() {
 ---
 
 ## 🛠️ Requirements
+
 - React 18 or newer
 - Font Awesome packages (see above)
 - Tailwind CSS (optional, for color classes)
@@ -49,10 +52,12 @@ function App() {
 ---
 
 ## 📝 License
+
 MIT
 
 ---
 
 ## 💡 More Info
-- [GitHub Repository](https://github.com/yourusername/dynamic-icon)
+
+- [GitHub Repository](https://github.com/Julz0711/dynamicIcon)
 - [NPM Package](https://www.npmjs.com/package/@julz-gtkncht/dynamic-icon)
