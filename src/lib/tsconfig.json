@@ -1,0 +1,14 @@
+{
+  "include": ["index.ts", "DynamicIcon.tsx"],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "outDir": "../../dist",
+    "rootDir": ".",
+    "lib": ["es2015", "dom"],
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
